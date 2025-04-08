@@ -105,5 +105,7 @@
     plt.show()
 
 # OUTPUT
+![image](https://github.com/user-attachments/assets/ce9662cc-8bb9-49ee-b8fa-b6c8d0e240fe)
+
  
 # RESULT / CONCLUSIONS
