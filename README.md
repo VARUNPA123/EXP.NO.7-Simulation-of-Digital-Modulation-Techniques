@@ -5,7 +5,7 @@
    iii) Phase Shift Keying (PSK)
 
 # AIM
-To simulate Amplitude Shift Keying (ASK), Frequency Shift Keying (FSK), and Phase Shift Keying (PSK) using Python, analyze their waveforms, and understand how digital data is transmitted using these modulation techniques.
+To simulate digital modulation techniques such as Amplitude Shift Keying (ASK), Frequency Shift Keying (FSK), and Phase Shift Keying (PSK) using Python, analyze their waveforms, and understand how digital data is transmitted using these modulation techniques.
 
 # SOFTWARE REQUIRED
 Google Colab
