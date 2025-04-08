@@ -10,7 +10,7 @@
 
 # ALGORITHMS
 
-    # PROGRAM
+# PROGRAM
     import matplotlib.pyplot as plt
 
     # Binary data
