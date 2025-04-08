@@ -12,18 +12,18 @@ Google Colab
 
 # ALGORITHMS
 1. **Initialize Parameters**: 
-   Define binary data (data), bit duration, sampling frequency (Fs), and carrier frequencies for ASK, FSK, and PSK modulation.
+   Define binary data (`data`), bit duration, sampling frequency (`Fs`), and carrier frequencies for ASK, FSK, and PSK modulation.
 
 2. **Time Vector Generation**:
-   Create a time vector (t_bit) corresponding to one bit duration with a high resolution based on the sampling frequency.
+   Create a time vector (`t_bit`) corresponding to one bit duration with a high resolution based on the sampling frequency.
 
 3. **Define Modulation Functions**:
    - For ASK: Create a cosine wave when the bit is 1; otherwise, generate a zero signal.
-   - For FSK: Generate sine waves with different frequencies (f1 for 1 and f0 for 0).
+   - For FSK: Generate sine waves with different frequencies (`f1` for 1 and `f0` for 0).
    - For PSK: Generate sine waves with a phase shift of 0 for 1 and π for 0.
 
 4. **Repeat Waveform Function**:
-   Implement a function (repeat_waveform) to apply modulation functions across the entire binary data stream.
+   Implement a function (`repeat_waveform`) to apply modulation functions across the entire binary data stream.
 
 5. **Generate Digital Signal**:
    Expand the binary data into a repeated digital signal matching the sampling resolution.
