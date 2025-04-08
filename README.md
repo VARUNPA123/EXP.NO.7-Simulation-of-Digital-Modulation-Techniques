@@ -11,7 +11,35 @@ To simulate digital modulation techniques such as Amplitude Shift Keying (ASK), 
 Google Colab
 
 # ALGORITHMS
+1. **Initialize Parameters**: 
+   Define binary data (data), bit duration, sampling frequency (Fs), and carrier frequencies for ASK, FSK, and PSK modulation.
 
+2. **Time Vector Generation**:
+   Create a time vector (t_bit) corresponding to one bit duration with a high resolution based on the sampling frequency.
+
+3. **Define Modulation Functions**:
+   - For ASK: Create a cosine wave when the bit is 1; otherwise, generate a zero signal.
+   - For FSK: Generate sine waves with different frequencies (f1 for 1 and f0 for 0).
+   - For PSK: Generate sine waves with a phase shift of 0 for 1 and π for 0.
+
+4. **Repeat Waveform Function**:
+   Implement a function (repeat_waveform) to apply modulation functions across the entire binary data stream.
+
+5. **Generate Digital Signal**:
+   Expand the binary data into a repeated digital signal matching the sampling resolution.
+
+6. **Apply Modulation Schemes**:
+   - **ASK Signal**: Use the `repeat_waveform` function with the ASK modulation function.
+   - **FSK Signal**: Generate modulated waves by switching frequencies based on binary data.
+   - **PSK Signal**: Generate modulated waves by switching phase based on binary data.
+
+7. **Define Time Axis**:
+   Create a global time axis for plotting all signals using the product of the bit duration and data length.
+
+8. **Plotting**:
+   - Plot the message signal (digital representation).
+   - Plot the ASK, FSK, and PSK modulated signals.
+   - Optionally, plot the carrier signal if defined.
 
 # PROGRAM
     import numpy as np
