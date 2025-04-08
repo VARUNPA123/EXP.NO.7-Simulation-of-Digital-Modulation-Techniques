@@ -11,10 +11,11 @@
 # ALGORITHMS
 
 # PROGRAM
+    import numpy as np
     import matplotlib.pyplot as plt
 
     # Binary data
-    data = [1, 0, 1, 0, 1]
+    data = [1, 0, 1, 0, 1, 0]
     bit_duration = 1
     Fs = 1000  
     t_bit = np.linspace(0, bit_duration, Fs, endpoint=False)
@@ -59,29 +60,41 @@
     # Plotting
     plt.figure(figsize=(16, 12))
 
-    # Digital Signal
-    plt.subplot(4, 1, 1)
-    plt.plot(time, digital, color='brown')
-    plt.title("Digital Input Signal")
+    # Message Signal
+    plt.subplot(5, 1, 1)
+    plt.plot(time, digital, color='blue')
+    plt.title("Message Signal")
+    plt.xlabel('Time (s)')
     plt.ylabel("Amplitude")
     plt.grid(True)
 
+    # Carrier Signal
+    plt.subplot(5, 1, 2)
+    plt.plot(time, carrier_signal, 'brown')
+    plt.title('Carrier Signal')
+    plt.xlabel('Time (s)')
+    plt.ylabel('Amplitude')
+    plt.grid(True)
+
+
     # ASK Signal
-    plt.subplot(4, 1, 2)
+    plt.subplot(5, 1, 3)
     plt.plot(time, ask_signal, color='green')
-    plt.title("Amplitude Shift Keying (ASK using Cosine Carrier)")
+    plt.title("Amplitude Shift Keying (ASK)")
+    plt.xlabel('Time (s)')
     plt.ylabel("Amplitude")
     plt.grid(True)
 
     # FSK Signal
-    plt.subplot(4, 1, 3)
+    plt.subplot(5, 1, 4)
     plt.plot(time, fsk_signal, color='black')
     plt.title("Frequency Shift Keying (FSK)")
+    plt.xlabel('Time (s)')
     plt.ylabel("Amplitude")
     plt.grid(True)
 
     # PSK Signal
-    plt.subplot(4, 1, 4)
+    plt.subplot(5, 1, 5)
     plt.plot(time, psk_signal, color='red')
     plt.title("Phase Shift Keying (PSK)")
     plt.xlabel("Time (s)")
