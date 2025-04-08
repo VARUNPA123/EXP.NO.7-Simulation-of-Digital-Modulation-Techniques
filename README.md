@@ -112,3 +112,4 @@ Google Colab
 
  
 # RESULT / CONCLUSIONS
+Thus, the simulation of digital modulation techniques such as ASK, FSK, and PSK were carried out successfully. The differences between the output waveforms of amplitude, frequency, and phase modulation were clearly observed.
